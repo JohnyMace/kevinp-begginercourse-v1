@@ -1,3 +1,3 @@
 # kevinp-begginer-course-v1
 
-This is a Kevin Powel's begginer course to making webpages with HTML and CSS. This exercise is marked as completed.
+This is a website created by following Kevin Powel's "HTML & CSS for Absolute Beginners" youtube series course.
