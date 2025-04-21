@@ -1,0 +1,39 @@
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  /* Font size px is based on inch, not actual pixel. Hardcoded fontsize in px overrides user settings in browser, so it is a bad practice to hardcore font size */
+
+  /* Default font size is 16px. If I do not specify otherwise, the default will be either 16px, or whatever browser settings the user might have. By leaving root font size have the default value, each user will have the browsing experience tailored to their settings */
+
+  /* That being said, for sizing fonts, use "rem" value instead. 1rem means 1 times the user or default set value */
+}
+header {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+
+  font-size: 6rem;
+  line-height: 1.1;
+  color: #4676A9;
+}
+section {
+  margin-block: 80px;
+}
+h2 {
+  color: darkorange;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+
+  color: white;
+  background-color: #004f9a;
+}
+.new-class {
+  background: pink;
+}
