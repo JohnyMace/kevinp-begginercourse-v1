@@ -1,7 +1,5 @@
 body {
-  max-width: 1000px;
-  margin: 0 auto;
-
+  color: #444;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -11,29 +9,89 @@ body {
 
   /* That being said, for sizing fonts, use "rem" value instead. 1rem means 1 times the user or default set value */
 }
-header {
-  text-align: center;
+img {
+  display: inline-block;
+  max-inline-size: 100%;
+  margin-inline: auto;
+}
+.wrapper {
+  margin-inline: auto;
+  max-inline-size: 900px;
+}
+a {
+  color: #4676A9;
+  text-decoration: none;
+}
+a:hover,
+a:focus-visible {
+  color: #113c63;
 }
 h1 {
   text-align: center;
 
-  font-size: 6rem;
+  font-size: 3.5rem;
   line-height: 1.1;
+
+  @media (width > 700px) {
+    font-size: 6.5rem;
+  }
+}
+h2 {
   color: #4676A9;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-block-start: 1rem;
+}
+header nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+header nav a {
+  padding: 1rem;
 }
 section {
   margin-block: 80px;
 }
-h2 {
-  color: darkorange;
-}
 footer {
   text-align: center;
   padding: 20px;
+  border: solid 5px #4676A9;
 
   color: white;
-  background-color: #004f9a;
+  background-color: #113c63;
 }
-.new-class {
-  background: pink;
+.teal-para {
+  padding: 25px;
+  border: 5px solid #4676A9;
+
+  color: white;
+  background-color: #113c63;
 }
+.blue-txt {
+  color: #4676A9;
+}
+.know-before-you-go {
+  padding: 2rem;
+  border: 5px solid #4676A9;
+
+  color: white;
+  background-image: url("../img/simple-steps.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* or contain - that makes sure you see all the image */
+  background-position: center;
+  /* background-size - you can put pixel values but thats pretty much useless */
+  /* background-position values are in pixels or keywords or combination of keywords - top, bottom, right, top right, etc */
+  /* background-repeat values - repeat-x, repeat-y, no-repeat */
+}
+.two-towers {
+  display: grid;
+  gap: 2rem;
+
+  @media (width > 700px) {
+      grid-template-columns: 1fr 1fr;
+    }
+} 
